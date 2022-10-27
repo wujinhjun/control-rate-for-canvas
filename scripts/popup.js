@@ -8,6 +8,9 @@ function sendMessageToContentScript(message, callback) {
 
 const handle = document.getElementById("handle");
 
+const display = document.getElementById("display");
+
+
 handle.addEventListener("click", () => {
     const size = document.getElementById("size").value || 1;
     sendMessageToContentScript({ cmd: 'test', value: `${size}` }, function (response) {
