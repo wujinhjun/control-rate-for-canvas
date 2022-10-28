@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         video.playbackRate = request.value;
         alert(`成功调整为${request.value}倍速`);
     }
-    sendResponse('我收到了你的消息！');
+    sendResponse(`${request.value}`);
 });
 
 document.addEventListener("keydown", (event) => {
