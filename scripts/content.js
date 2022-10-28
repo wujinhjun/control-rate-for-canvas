@@ -1,8 +1,24 @@
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-    // console.log(sender.tab ?"from a content script:" + sender.tab.url :"from the extension");
+const video = document.querySelector("video")
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.cmd == 'test') {
+        video.playbackRate = request.value;
         alert(`成功调整为${request.value}倍速`);
-        document.querySelector("video").playbackRate = request.value;
     }
     sendResponse('我收到了你的消息！');
 });
+
+document.addEventListener("keydown", (event) => {
+    if (event.keyCode === 37) {
+        video.currentTime -= 10;
+    } else if (event.keyCode === 39) {
+        video.currentTime += 10;
+    } else if (event.keyCode === 32) {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+})
+
