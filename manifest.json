@@ -18,7 +18,8 @@
       "js": ["scripts/content.js"],
       "matches": [
         "https://vshare.sjtu.edu.cn/play/*",
-        "https://vshare.sjtu.edu.cn/*"
+        "https://vshare.sjtu.edu.cn/*",
+        "https://oc.sjtu.edu.cn/courses/*"
       ]
     }
   ]
