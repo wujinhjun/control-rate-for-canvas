@@ -1,5 +1,7 @@
 # control-rate-for-canvas
 
+## At the beginning
+
 Today is 1024, so maybe I can do something to celebrate this special day for me(maybe a designer or programer)
 At the same time, I find view the record of class is difficult, some content densities are low and the official control rate max is 2x. So, I want to develop an easy tool for this scene.
 
@@ -10,7 +12,10 @@ At the same time, I find view the record of class is difficult, some content den
 
 ## Install Description
 
-After install this extension, maybe need to refresh the web page to load.
+After install this extension, maybe need to refresh the web page to load.  
+
+By a way, I will publish it in the edge, and it is a pity that I can't register to be a chrome developer. If you prefer Chrome, you can only install it yourself, sorry.
+Code can be download in the [releases](https://github.com/wujinhjun/control-rate-for-canvas/releases).
 
 ## At the end
 
