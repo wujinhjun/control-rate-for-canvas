@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "playback rate",
+  "name": "canvas playback rate",
   "description": "Control tool for playback rate in canvas",
+  "_locale": "zh-cn",
   "version": "1.0",
   "icons": {
     "16": "images/icon-16.png",
