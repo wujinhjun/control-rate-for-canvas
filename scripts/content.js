@@ -1,4 +1,4 @@
-const video = document.querySelector("video")
+const video = document.querySelector("video");
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.cmd == 'test') {
