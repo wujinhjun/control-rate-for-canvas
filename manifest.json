@@ -2,7 +2,6 @@
   "manifest_version": 3,
   "name": "canvas playback rate",
   "description": "Control tool for playback rate in canvas",
-  "_locale": "zh-cn",
   "version": "1.0",
   "icons": {
     "16": "images/icon-16.png",
@@ -13,14 +12,17 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "host_permissions": ["https://vshare.sjtu.edu.cn/play/*"],
+  "host_permissions": [
+    "https://vshare.sjtu.edu.cn/play/*",
+    "https://oc.sjtu.edu.cn/*"
+  ],
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
       "matches": [
         "https://vshare.sjtu.edu.cn/play/*",
         "https://vshare.sjtu.edu.cn/*",
-        "https://oc.sjtu.edu.cn/courses/*"
+        "https://oc.sjtu.edu.cn/*"
       ]
     }
   ]
